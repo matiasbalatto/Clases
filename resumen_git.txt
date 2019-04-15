@@ -1,0 +1,17 @@
+nos vemos a la carpeta : 
+cd y ls
+
+chequeamos el stage de la carpeta : 
+git status
+
+agregamos los cambios al stage 
+git add . (todos los archivos)
+git add CARPETA/ (solo la carpeta)
+
+verificamos los cambios que agregamos : 
+git status (deberian aparecer en verde)
+
+git commit -m "Mensaje descriptivo del commit"
+git push
+
+antes de hacer un push es RECOMENDABLE hacer un pull
