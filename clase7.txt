@@ -1,0 +1,8 @@
+
+commits-> identificadores unicos que pueden verse con
+git log --oneline (identificacion de los commits)
+
+git reset numero_commit - > volvemos a la version previa
+
+los cambios quedan en el stage y no estan agregados al repo ni commiteados!
+
