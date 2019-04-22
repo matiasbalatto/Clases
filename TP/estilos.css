@@ -1,0 +1,22 @@
+.container{
+    height: auto;;
+}
+
+.encabezado{
+    background: #403F3F;
+    color:white;
+    height: 200px;
+    text-align: right;
+}
+
+.contenido{
+height: 600px;
+border: 1px solid black;
+text-align: center;
+}
+
+.logindiv{
+    background: #838383;
+    padding-right: 1em;
+}
+
