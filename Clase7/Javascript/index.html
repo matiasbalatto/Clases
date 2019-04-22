@@ -2,88 +2,78 @@
     <head>
         <title>Primeros Pasos JS</title>
         <link rel="stylesheet" href="estilos.css">
-
-    
-    
     </head>
+
     <body>
         <script>
-        
         // comentario en javascript
 
-       // document.write('Hola mundo!');
-        //document.write("Hola mundo!");
-        // document.write es una funcino que permite escribir un msj en el navgdr
+        /* comentario
+           multilinea
+        */
+
+        /* document.write('Hola mundo!');
+           document.write("Hola mundo!");
+           document.write es una funcino que permite escribir un msj en el navgdr
+         */
+
+        //tipos de variables
 
         var nombre='franco'; //string
         var sueldo=1.23; // float
         var felicidad = false; // booleano
         var correo= 'dileo@gmail.com'; //string
         var numerito=2;//entero
-        //document.write(sueldo);//imprimiendo la variable sueldo
-        //concatenar
-        //document.write("mi nombre es" + nombre+ "y el numerito es: " +numerito);
+        
+        // document.write(sueldo);//imprimiendo la variable sueldo
+        /*concatenar
+        document.write("mi nombre es" + nombre+ "y el numerito es: " +numerito);
+        */
 
-        //var usuario = prompt('Ingresa tu usuario','por favor');
+
+        // var usuario = prompt('Ingresa tu usuario','por favor');
         // la funcion prompt tiene dos valores (parametros);
         // el primero es el titulo de la caja, y el segundo es el value que viene en el input
         //document.write('<br><br><br><br>');
         
         //document.write(usuario);
         
-        //
-        //typeof es una funcion que sirv para ver que tipo de dato estoy analizando
-        //document.write(typeof(3));//number o int
-        //document.write(typeof('franco'));
-        //document.write(typeof(numero1));
-        document.write('<hr>');
-        //cuando deben cumplirse multiples condiciones en simultaneo usamos el operador && and
-
-        if (numero1>numero2 && numero1>numero3){
-            alert("el primer numero es el mas grande");
-        }else{
-
-        }
-
-
+        /*typeof es una funcion que sirv para ver que tipo de dato estoy analizando
+          document.write(typeof(3));//number o int
+          document.write(typeof('franco'));
+          document.write(typeof(numero1));
+          document.write('<hr>');
+        */
+        
+        /*Ejercicio, indicar cual es el numero mas alto
+        
         var numero1 = parseInt(prompt('ingresa un numero'));
         var numero2 = parseInt(prompt('ingresa un numero'));
         var numero3 = parseInt(prompt('ingresa un numero'));
-
+        
         if (numero1>numero2){
-            if(numero1>numero3){
-                alert("el mas grande es el numero:" +numero1);
-            } else{
-                alert('el mas grande es el '+numero3);
-            }
-        } else if (numero2>numero3) {
-                   alert('el mas grande es'+numero2);
+            if (numero1>numero3)
+            {
+                alert("el mayor es "+ numero1);
+            } else alert("el mayor es:" + numero3);
+        } else if (numero2>numero3)
+                {
+                alert("el mayor es"+numero2);
                 }
+                else alert("el mayor es"+ numero3);
+        */
 
-        
-        
-        //si se cumple la condicion pasa algo
-        //si no se cumple la condicion pasa otra cosa
-        //var edad= parseInt(prompt('ingrese edad'));
+        /*cuando deben cumplirse multiples condiciones en simultaneo usamos el operador && and
 
-        if (edad>18){
-            document.write('Bienvenido al sitio');
-        } else {
-            alert("Espera un par de añitos");//alert funcion que levanta un popup
+        numero1=25;
+        numero2=2;
+        numero3=12;
+
+        if (numero1>numero2 && numero1>numero3){
+            alert("el numero 1 es el mayor");
         }
 
-        
-
-        
-        
-
-
-
-        </script>
+        */
+       </script>
     </body>
-
-
-
-
-
 </html>
