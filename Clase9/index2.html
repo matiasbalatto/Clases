@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+    // var enero=31;
+    // var febrero=28;
+    // var marzo=31;
+    // var abril
+    
+    // var meses =[31,28,31,30]
+    // var heroes=['Tony,', 'bruce','steve',false,"2.28"]
+    
+    //a la posicion de un vector en un principio se puede acceder mediante
+    // corchetes y a el subindice
+    
+    // document.write(heroes [1]);
+    // document.write(meses[0]);
+
+    // var f;
+    // for (f=0;f<=meses.length-1;f++){
+    //     document.write("la cantidad de dias es: "+ meses[f]);
+
+    // }
+    
+
+
+    //definir dos vectores
+    //cantidad de dias/meses
+    //febrero es b cambie la cantidad
+    // de dias , el usuario ingresa dato por el prompt
+
+    // ejercicio
+
+    // crear dos funciones:
+    // 1. debe pedirte al usuario a traves de un prompt que cargue un vector de 5 elementos
+    //     valores[0]=12//
+    
+    
+
+    
+
+    var mi_vector=new Array(5);
+    cargar_array(mi_vector);
+
+    function cargar_array(mi_vector){
+        var n=mi_vector.length;
+        for (var f=0;f<n;f++){
+            var valor=parseInt(prompt("ingrese numero"));
+            mi_vector[f]=valor;
+            document.write(mi_vector[f]+" ");
+        }
+    }
+
+
+
+     </script>
+
+
+</body>
+</html>

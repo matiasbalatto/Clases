@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase9</title>
+     
+</head>
+<body>
+
+    <input type="password" id="clave1" placeholder="*********">
+    <button type="button" onclick="verificar_password">
+        verificar contraseña
+    </button>
+
+    <script>
+        function verificar_password(){
+            // almacenar en una variable lo que el usuario
+            // puso dentro del input type passw y verificar que tenga mas de 10 caract
+            var pwd=document.getElementById("clave1").value.length;
+            // value es una propiedad que nos brinda el valor de el elemento con id clave1
+            if (pwd>=10){
+                alert("contraseña valida")
+            } else {
+                alert("sal de aqui debil")
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>
