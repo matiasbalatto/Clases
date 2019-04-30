@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <input type="text" id="texto1">        
+    <span id="restantes">250</span>
+    <hr>
+    <select id="comidas">
+        <option value="papitas con chedar">Papas</option>
+        <option value="birrita">La Mejor Birra</option>
+        <option value="cangreburguer">Hamburguesota</option>
+    </select>
+
+    <input type="text" id="comida_elegida" placeholder="Tu comida favorita es...">
+
+    <script>
+    // evento keydown keyup
+    // almacenamos la cantidad de caracteres que tiene el input y se la restamos a 250
+    // funcion propa de js que tiene 2 parametros obligatorios: evento a escuhar
+    
+    // y la funcion que se ejecuta cuando sucede el evento
+    addEventListener('load',comenzar);
+    
+    function comenzar(){
+       
+        document.getElementById('texto1').addEventListener('keyup',contarCaracteres);
+
+        document.getElementById('comidas').addEventListener('change',papitas);
+
+    }
+
+    function papitas(){
+        var contenido_nuevo = document.getElementById('comidas').value;
+        document.getElementById('comida_elegida').value=contenido_nuevo;
+    }
+    function contarCaracteres(){
+        //almacena la cantidad de caract que tiene le input y se la restamos a 250
+        var caracteres=parseInt(document.getElementById('texto1').value.length);
+        // una vez obtenida la referencia del elemento accedo a su valor con la propiedad
+        // value y a la cantidad de caracteres con la propiedad length
+        var disponibles = 250 - caracteres;
+        // innerhtml es una propiedad que se desprende de la referencia a un elemento
+        // y modifica u otiene el valor que hay dentro
+        document.getElementById('restantes').innerHTML=disponibles;
+        
+    }
+      
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <input type="text" id="num3">
+    <span id="totalspan"></span>
+
+    <input type="button" value="Sumar" id="calcular"></button>
+
+
+
+    <script>
+     
+        addEventListener('load',cargar);
+
+        function cargar(){
+           
+           document.getElementById('calcular').addEventListener('click',sumar);
+
+        }
+    
+        function sumar(){
+           
+            var total=parseInt(document.getElementById('num1').value)+parseInt(document.getElementById('num2').value)+parseInt(document.getElementById('num3').value);
+            document.getElementById('totalspan').innerHTML=total;
+            
+        }
+    
+    </script>
+
+</body>
+</html>

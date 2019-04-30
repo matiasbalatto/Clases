@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Ejercicio JS</title>
+</head>
+<body>
+    <div class="container">
+
+        <input type="text" id="usuario">
+        <br>
+        <input type="text" id="mail">
+        <br>
+        <input type="text" id="dni">
+
+        <script>
+        
+        addEventListener('load',inicio);
+
+        function inicio(){
+            document.getElementById('usuario').addEventListener('blur',colorear);
+            document.getElementById('mail').addEventListener('blur',colorear);
+            document.getElementById('dni').addEventListener('blur',colorear);
+
+            document.getElementById('mail').focus();
+
+        }
+
+
+        
+        function colorear(){
+            
+            var cant=parseInt(document.getElementById('usuario').value.length);
+            
+            if (cant<3){
+                document.getElementById('usuario').style.color='red';
+            } else document.getElementById('usuario').style.color='green';
+
+        }
+        
+        
+        
+        </script>
+
+
+    </div>
+    
+    
+    
+    
+</body>
+</html>
