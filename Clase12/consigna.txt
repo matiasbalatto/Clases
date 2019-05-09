@@ -1,0 +1,36 @@
+diagramar tabla reservas (relacion con tabla usuarios y con promociones)
+
+diagramar la tabla promociones
+
+en el login: consultas que debo hacer, q resultado espero
+
+en el registro: que consultas tengo que hacer verificar que el usuario exista, que resultados espero,
+
+reservas: debo mostrar todas las reservas y la informacion del usuario
+
+promociones: el admin debe poder cargar promociones del dia.
+
+---Reservas:
+id_persona
+id_reserva_usuario
+fecha
+id_reserva_promo*
+
+---Promociones:
+id_promo *
+nombre_promo
+costo
+
+login
+
+select count() 
+
+
+
+
+
+
+
+
+
+
