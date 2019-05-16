@@ -1,0 +1,10 @@
+menu
+login
+administrador
+
+la vista que se renderiza cuando ingresamos a
+menu- me muestre 3 enlaces <a href>
+
+la vista de login muestre un formulario con estilos de bootstrap
+
+administrador - muestra una tabla con estilos de bootstrap
