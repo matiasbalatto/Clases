@@ -1,0 +1,14 @@
+registro
+nombre,apellido,usuario,contraseña,repetir contraseña
+
+este formulario debe renderizarse cuando se carga la ruta/registro
+
+lacontraseña debe ser verificada en el backend e informar al usuario mediante un mensaje 
+si no coinciden(en la vista)
+
+si esta todo ok, coinciden + la loingitud de la informacion que se pone en el input>0
+.length, req.body.usuario.length>0
+
+voy a redirigir al usuario res.redirect ('/login')
+y la ruta login debe mostrar un formulario de login
+

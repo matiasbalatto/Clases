@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        
+        {{#each alumnos}}
+        <div class="col-4">
+            <div class="card mt-5">
+                <img class="card-img-top" src="/images/{{foto}}" alt="">
+                <div class="card-body">
+                    <p class="card-text">
+                        <a href="/persona/{{nombre}}/{{edad}}/{{foto}}">{{nombre}} </a>
+                        
+                        |
+                        {{edad}}
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
