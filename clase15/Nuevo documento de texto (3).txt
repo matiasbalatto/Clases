@@ -1,0 +1,28 @@
+npm install experess -g
+npm install express-generator -g
+
+express nombre carpeta --hbs
+
+npm install, dentro de la carpeta
+
+npm install md5 --save
+
+npm install uuid 
+
+--------------------------------------
+
+app js - declarar la ruta final a la cual queremos acceder
+routes - donde guardamos los arhivos js
+views -
+
+--------------------------------------
+
+app.j
+definir la ruta del archivo
+nodemon npm start
+
+-----------------------------------------
+la vista siempre se renderiza, en la ruta en la que estas
+----------------------------------------------
+
+

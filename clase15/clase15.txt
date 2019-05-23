@@ -1,0 +1,10 @@
+/registro
+/panel
+/login
+
+
+/en la ruta por defecto hacemos un menu que nos lleve a todas las rutas
+
+select * from usuarios where usuario='"+usuario+"' and password = '"+password+"'",(err,row)=>
+
+
