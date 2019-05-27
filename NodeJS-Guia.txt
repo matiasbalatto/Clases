@@ -1,0 +1,41 @@
+
+1º Instalar express
+npm install express-g
+npm install express-generator -g
+
+2º Crear el proyecto 
+express nombrecarpeta --hbs
+
+3º Posicionarse dentro de la carpeta. e instalar los modulos
+npm install
+
+4º Instalar nodemon tambien dentro de la carpeta
+npm install nodemon
+
+5º Iniciar el servidor
+nodemon npm start
+
+-------------------------------------------------------------------
+
+Crear Rutas
+--------------
+1º Editar archivo app.js
+var nombre = require ("./routes/nombredelaruta");
+app.use ("./ruta",variable);
+
+2º Editar routes
+crear archivo en "routes"
+
+var express = require('express');
+var router = express.Router();
+
+router.get('/',function(req,res,next){
+   res.render('login',{title:"bienvenida"});
+
+})
+
+
+
+3º crear vista
+crear archivo.hbs en Views
+

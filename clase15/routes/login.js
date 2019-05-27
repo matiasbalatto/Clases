@@ -18,9 +18,7 @@ router.post('/',(req,res,next)=>{
     else 
         res.render('login',{mensaje:'datos correctos'});
 })
-
-
-  
+ 
 })
 
 module.exports = router;

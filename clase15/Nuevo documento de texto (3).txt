@@ -26,3 +26,19 @@ la vista siempre se renderiza, en la ruta en la que estas
 ----------------------------------------------
 
 
+1º Instalar express
+npm install express-g
+npm install express-generator -g
+
+2º Crear el proyecto 
+express nombrecarpeta --hbs
+
+3º Posicionarse dentro de la carpeta. e instalar los modulos
+npm install
+
+4º Instalar nodemon tambien dentro de la carpeta
+npm install nodemon
+
+5º Iniciar el servidor
+nodemon npm start
+
