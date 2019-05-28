@@ -1,0 +1,20 @@
+
+crear tabla de promociones y cargar ofertas x 
+se debe mostrar en /promociones solo si el usuario esta logueado
+
+se debe crear dentro de la tabla promocion un boton para eliminar la promocion(delete)
+
+id_promo 
+titulo
+descripcion
+codigo
+
+#each objeto
+id_promo
+/each
+
+
+localhost:3000/editar/2
+->req.params-> id select * from
+
+como subir un archivo al servidor
