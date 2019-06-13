@@ -1,0 +1,25 @@
+<div class="container">
+  <!-- ngIF ngFor -->
+  <div class="row">
+    <!-- index es la llave que tiene la referencia de la posicion
+    del objeto que se esta recorriendo -->
+    <div *ngFor="let pj of personajes; let i=index" class="col-4 mt-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{pj.img}}" alt="Card image cap">
+        <div class="card-body">
+          <h4>{{i}}</h4>
+          <!-- i es la vuelta que esta dando el for y se la pasamos
+          como parametro a nuestra funcion ver_personaje que se ejecuta
+          en personajes.component.ts -->
+          <h5 class="card-title"> {{pj.nombre}} </h5>
+          <p class="card-text">{{pj.bio}}</p>
+          
+          <button type="button" (click)="ver_personaje(i)" class="btn btn-block btn-outline-warning">Ver Mas</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

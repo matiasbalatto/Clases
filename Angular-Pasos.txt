@@ -1,0 +1,30 @@
+npm install @angular/cli
+ng new proyecto2
+cd carpeta 
+npm install (MODULOS)
+
+
+angular cli -1 componente
+app -> app.component.html , .css . ts
+
+angular CLI
+ng g c components/navbar
+app.modeule.ts ->importaba el componente
+
+5 componentes
+home->explicar para que sirve este sitio, comercio de juguetes
+personajes-> ver todos los heroes con su descripcion
+personaje-> ver cada heroe individualmente
+navbar-> buscar todos los links
+footer->mapita
+
+
+ng g c components/home --spec false
+ng g c components/personajes
+ng g c components/personaje
+ng gc components/navbar
+ng gc components/footer
+
+app.js archivo de ruta y endpoint
+
+cuando solicita una ruta el cliente llamar a un componente
