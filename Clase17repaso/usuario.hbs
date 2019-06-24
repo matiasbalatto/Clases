@@ -1,0 +1,28 @@
+<p>VISTA DE USUARIOS</p>
+<form action="/2" method="post">
+    <h5>Nombre del Usuario</h5>
+    <input type="text" name="buscar" id="Buscar">
+    <button type="submit">Consultar</button>
+
+
+
+</form>
+<table class="table">
+    <tr>
+        
+        <td>Nombre de Usuario</td>
+        <td>Password</td>
+        <td>Confirmado</td>
+        <td>Estado</td>
+
+    </tr>
+
+    {{#each mensaje}}
+    <tr>
+        <td>{{usuario}}</td>
+        <td>{{password}}</td>
+        <td>{{confirmado}}</td>
+        <td>{{estado}}</td>
+    </tr>
+    {{/each}}
+</table>
