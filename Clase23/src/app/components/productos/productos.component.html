@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let producto of all_productos" class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="src/assets/sarasa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> {{producto.nombre_p}} </h5>
+                  <p class="card-text">
+                      {{producto.descripcion}}
+                  </p>
+                  <h4>Precio {{producto.precio_p}}  </h4>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
